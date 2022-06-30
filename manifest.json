@@ -1,0 +1,25 @@
+{
+    "name": "YouTube Speed Toolbar",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "YouTube Speed Toolbar",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*.youtube.com/"
+    ]
+}
+
+
