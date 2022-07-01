@@ -63,18 +63,18 @@
 	
 	document.body.appendChild(s);
 
-	// 
-	const price = document.querySelector('.yt-range-speed');
+	// Controle speed.
+	const speed = document.querySelector('.yt-range-speed');
 	const output = document.querySelector('.yt-range-speed-output');
 
-	var value = parseFloat(price.value).toFixed(2);
+	var value = parseFloat(speed.value).toFixed(2);
 	output.textContent = value;
 
-	price.addEventListener('input', function() {
-		var value = parseFloat(price.value).toFixed(2);
+	speed.addEventListener('input', function() {
+		var value = parseFloat(speed.value).toFixed(2);
 		output.textContent = value;
 
-		var speedValue = parseFloat(price.value);
+		var speedValue = parseFloat(speed.value);
 		console.log('Speed value: '+ speedValue);
 		document.getElementsByTagName('video')[0].playbackRate = speedValue;
 	});
