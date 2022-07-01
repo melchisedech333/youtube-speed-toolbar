@@ -21,6 +21,7 @@
 				height: `+ offset +`px;
 				background-color: rgba(0, 0, 0, 0);
 				z-index: 99999;
+				display: none;
 			}
 
 			input[type=range][orient=vertical] {
@@ -81,7 +82,22 @@
 		document.getElementsByTagName('video')[0].playbackRate = speedValue;
 	});
 
-	
+	// Visibility control.
+	var internvalRunning = false;
+	setInterval(function() {
+		if (internvalRunning == false) {
+			internvalRunning = true;
+			
+			var url = window.location.href.toString().trim();
+			if (url.indexOf('youtube.com') != -1 && url.indexOf('watch') != -1) {
+				document.querySelector('.yt-toolbar-content').style.display = 'block';
+			} else {
+				document.querySelector('.yt-toolbar-content').style.display = 'none';
+			}
+
+			internvalRunning = false;
+		}
+	}, 100);
 })();
 
 
