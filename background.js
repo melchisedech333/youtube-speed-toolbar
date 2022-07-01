@@ -63,10 +63,15 @@
 	document.body.appendChild(s);
 
 	// Controle speed.
-	const speed = document.querySelector('.yt-range-speed');
-	const output = document.querySelector('.yt-range-speed-output');
-	output.textContent = parseFloat(speed.value).toFixed(2);
+	var speed = document.querySelector('.yt-range-speed');
+	var output = document.querySelector('.yt-range-speed-output');
 
+	// Startup.
+	var speedValue = document.getElementsByTagName('video')[0].playbackRate;
+	speed.value = speedValue;
+	output.textContent = parseFloat(speedValue).toFixed(2);
+
+	// Realtime control.
 	speed.addEventListener('input', function() {
 		var value = parseFloat(speed.value).toFixed(2);
 		output.textContent = value;
@@ -75,6 +80,8 @@
 		console.log('Speed value: '+ speedValue);
 		document.getElementsByTagName('video')[0].playbackRate = speedValue;
 	});
+
+	
 })();
 
 
