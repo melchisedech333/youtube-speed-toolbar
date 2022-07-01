@@ -68,7 +68,17 @@
 	var output = document.querySelector('.yt-range-speed-output');
 
 	// Startup.
-	var speedValue = document.getElementsByTagName('video')[0].playbackRate;
+	var speedValue = 1;
+	
+	var vel = document.getElementsByTagName('video');
+	if (vel) {
+		if (vel[0]) {
+			if (vel[0].playbackRate) {
+				speedValue = vel[0].playbackRate;
+			}
+		}
+	}
+
 	speed.value = speedValue;
 	output.textContent = parseFloat(speedValue).toFixed(2);
 
@@ -83,10 +93,10 @@
 	});
 
 	// Visibility control.
-	var internvalRunning = false;
+	var internvalSpeedRunning = false;
 	setInterval(function() {
-		if (internvalRunning == false) {
-			internvalRunning = true;
+		if (internvalSpeedRunning == false) {
+			internvalSpeedRunning = true;
 			
 			var url = window.location.href.toString().trim();
 			if (url.indexOf('youtube.com') != -1 && url.indexOf('watch') != -1) {
@@ -95,9 +105,9 @@
 				document.querySelector('.yt-toolbar-content').style.display = 'none';
 			}
 
-			internvalRunning = false;
+			internvalSpeedRunning = false;
 		}
-	}, 100);
+	}, 1000);
 })();
 
 
