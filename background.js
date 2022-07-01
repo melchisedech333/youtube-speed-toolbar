@@ -18,7 +18,7 @@
 				top: calc((100% / 2) - `+ (offset / 2) +`px);
 				right: 0px;
 				width: 33px;
-				height: `+ offset +`px;
+				height: `+ offset +`px;s
 				background-color: rgba(0, 0, 0, 0);
 				z-index: 99999;
 				display: none;
