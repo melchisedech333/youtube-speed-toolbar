@@ -65,9 +65,7 @@
 	// Controle speed.
 	const speed = document.querySelector('.yt-range-speed');
 	const output = document.querySelector('.yt-range-speed-output');
-
-	var value = parseFloat(speed.value).toFixed(2);
-	output.textContent = value;
+	output.textContent = parseFloat(speed.value).toFixed(2);
 
 	speed.addEventListener('input', function() {
 		var value = parseFloat(speed.value).toFixed(2);
