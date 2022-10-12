@@ -28,6 +28,8 @@ To improve my YouTube browsing experience, I created this video speed control ba
 
 This way I don't need to access the settings in the video player, I just click on the bar (it floats on the side of the page, in a very discreet way).
 
+To install this extension on your Google Chrome, you must download it, and then install it manually. If you don't know how to install an extension manually, just do a quick Google search and you'll find out soon enough.
+
 <br>
 <br>
 

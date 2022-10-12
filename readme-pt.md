@@ -28,6 +28,8 @@ Para melhorar minha experiência de navegação no YouTube, eu criei esta barrin
 
 Desta maneira não preciso ficar acessando as configurações no player do vídeo, basta eu clicar na barrinha (ela fica flutuando na lateral da página, de maneira bem discreta).
 
+Para instalar a extensão em seu Google Chrome, basta fazer download dela, e instalá-la manualmente. Se você não sabe instalar uma extensão manualmente, dê uma pesquisada rápida no Google que você resolverá isso rapidamente.
+
 <br>
 <br>
 
