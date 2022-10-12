@@ -1,7 +1,7 @@
 
 <div align='center'>
 
-<img src="images/banner.png" />
+<img src="images/banner.jpg" />
 
 </div>
 
@@ -22,10 +22,13 @@
 
 Language: <a href="readme.md">EN-US</a>
 
+<img src="images/bar.png" align="left" />
+
 Para melhorar minha experiência de navegação no YouTube, eu criei esta barrinha de controle da velocidade dos vídeos.
 
 Desta maneira não preciso ficar acessando as configurações no player do vídeo, basta eu clicar na barrinha (ela fica flutuando na lateral da página, de maneira bem discreta).
 
+<br>
 <br>
 
 :smiley: Autor
