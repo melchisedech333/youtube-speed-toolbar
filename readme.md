@@ -1,7 +1,7 @@
 
 <div align='center'>
 
-<img src="images/banner.jpg" />
+<img src="images/banner.jpg?v=234" />
 
 </div>
 
