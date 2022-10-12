@@ -22,7 +22,9 @@
 
 Language: <a href="readme-pt.md">PT-BR</a>
 
+To improve my YouTube browsing experience, I created this video speed control bar.
 
+This way I don't need to access the settings in the video player, I just click on the bar (it floats on the side of the page, in a very discreet way).
 
 <br>
 
