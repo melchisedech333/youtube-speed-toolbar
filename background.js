@@ -5,7 +5,7 @@
     if (url.indexOf('youtube.com') == -1) 
         return;
 
-	console.log("YouTube Speed Toolbar Started - Cristo <3");
+	console.log("YouTube Speed Toolbar Started - I Love Cristo <3");
 
 	// Insert control.
 	var s = document.createElement('div');
